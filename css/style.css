@@ -1104,7 +1104,7 @@
 			background-attachment: fixed;
 			background-image: url("images/overlay.png"), url("../images/banner.jpg");
 			background-position: center center;
-			background-size: 75%;
+			background-size: 10%;
 		}
 
 			.wrapper.style3 header.major {
