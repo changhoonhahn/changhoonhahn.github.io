@@ -1054,6 +1054,7 @@
 	#banner {
 		padding: 16em 0 13em 0;
 		background-attachment: fixed;
+                background-repeat: no-repeat;
 		background-image: url("images/overlay.png"), url("../images/banner_old.jpg");
 		background-position: center top;
 		background-size: 120%;
@@ -1087,6 +1088,7 @@
 	#banner2 {
 		padding: 16em 0 13em 0;
 		background-attachment: fixed;
+                background-repeat: no-repeat;
 		background-image: url("images/overlay.png"), url("../images/pic01.jpg");
 		background-position: center top;
 		background-size: 100%;
@@ -1119,6 +1121,7 @@
 	
         #bannerdata {
 		padding: 16em 0 13em 0;
+                background-repeat: no-repeat;
 		background-attachment: fixed;
 		background-image: url("images/overlay.png"), url("../images/IMG_0114.jpg");
 		background-position: center top;
@@ -1152,6 +1155,7 @@
         
         #bannerpersonal {
 		padding: 16em 0 13em 0;
+                background-repeat: no-repeat;
 		background-attachment: fixed;
 		background-image: url("images/overlay.png"), url("../images/IMG_0540.jpg");
 		background-position: center top;
@@ -1186,6 +1190,7 @@
         
         #bannerresearch {
 		padding: 16em 0 13em 0;
+                background-repeat: no-repeat;
 		background-attachment: fixed;
 		background-image: url("images/overlay.png"), url("../images/pic01.jpg");
 		background-position: center top;
