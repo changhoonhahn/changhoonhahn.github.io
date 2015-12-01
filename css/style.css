@@ -1052,12 +1052,12 @@
 /* Banner */
 
 	#banner {
-		padding: 16em 0 15em 0;
+		padding: 250px 0 13em 0;
 		background-attachment: fixed;
                 background-repeat: no-repeat;
 		background-image: url("images/overlay.png"), url("../images/banner_old.jpg");
-		background-position: center top;
-		background-size: 120%;
+		background-position: top;
+		background-size: 1600px;
 		line-height: 1.75;
 		text-align: center;
 	}
@@ -1086,12 +1086,12 @@
 	}
 
 	#banner2 {
-		padding: 16em 0 15em 0;
-		background-attachment: scroll;
+		padding: 250px 0 13em 0;
+		background-attachment: fixed;
                 background-repeat: no-repeat;
 		background-image: url("images/overlay.png"), url("../images/pic01.jpg");
-		background-position: center top;
-		background-size: 100%;
+		background-position: top;
+		background-size: 1600px;
 		line-height: 1.75;
 		text-align: center;
 	}
@@ -1118,14 +1118,47 @@
 	body.is-touch #banner2 {
 		background-attachment: scroll;
 	}
+	#banner3 {
+		padding: 250px 0 13em 0;
+		background-attachment: fixed;
+                background-repeat: no-repeat;
+		background-image: url("images/overlay.png"), url("../images/banner_old.jpg");
+		background-position: top;
+		background-size: 1600px;
+		line-height: 1.75;
+		text-align: center;
+	}
+
+		#banner3 :last-child {
+			margin-bottom: 0;
+		}
+
+		#banner3 h2 {
+			color: #ffffff;
+			display: inline-block;
+			font-size: 3.5em;
+			line-height: 1.35;
+			margin-bottom: 0.5em;
+		}
+
+		#banner3 p {
+			color: #aaa;
+			font-size: 1.5em;
+			margin-bottom: 1.75em;
+			text-transform: uppercase;
+		}
+
+	body.is-touch #banner3 {
+		background-attachment: scroll;
+	}
 	
         #bannerdata {
-		padding: 16em 0 15em 0;
-                background-repeat: no-repeat;
+		padding: 250px 0 13em 0;
 		background-attachment: fixed;
+                background-repeat: no-repeat;
 		background-image: url("images/overlay.png"), url("../images/IMG_0114.jpg");
-		background-position: center top;
-		background-size: 100%;
+		background-position: top;
+		background-size: 1600px;
 		line-height: 1.75;
 		text-align: center;
 	}
@@ -1154,12 +1187,12 @@
 	}
         
         #bannerpersonal {
-		padding: 16em 0 15em 0;
-                background-repeat: no-repeat;
+		padding: 250px 0 13em 0;
 		background-attachment: fixed;
+                background-repeat: no-repeat;
 		background-image: url("images/overlay.png"), url("../images/tree.jpg");
-		background-position: center top;
-		background-size: 100%;
+		background-position: top;
+		background-size: 1600px;
 		line-height: 1.75;
 		text-align: center;
 	}
@@ -1189,13 +1222,13 @@
         
         
         #bannerresearch {
-		padding: 16em 0 15em 0;
+		padding: 250px 0 13em 0;
+		background-attachment: fixed;
                 background-repeat: no-repeat;
-		background-attachment: scroll;
 		background-image: url("images/overlay.png"), url("../images/pic01.jpg");
-		background-position: center top;
-		background-size: 100%;
-		line-height: 1.;
+		background-position: top;
+		background-size: 1600px;
+		line-height: 1.75;
 		text-align: center;
 	}
 
