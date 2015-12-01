@@ -1082,12 +1082,12 @@
 		}
 
 	body.is-touch #banner {
-		background-attachment: scroll;
+		background-attachment: fixed;
 	}
 
 	#banner2 {
 		padding: 16em 0 15em 0;
-		background-attachment: fixed;
+		background-attachment: scroll;
                 background-repeat: no-repeat;
 		background-image: url("images/overlay.png"), url("../images/pic01.jpg");
 		background-position: center top;
@@ -1150,14 +1150,14 @@
 		}
 
 	body.is-touch #bannerdata {
-		background-attachment: scroll;
+		background-attachment: fixed;
 	}
         
         #bannerpersonal {
 		padding: 16em 0 15em 0;
                 background-repeat: no-repeat;
 		background-attachment: fixed;
-		background-image: url("images/overlay.png"), url("../images/IMG_0540.jpg");
+		background-image: url("images/overlay.png"), url("../images/tree.jpg");
 		background-position: center top;
 		background-size: 100%;
 		line-height: 1.75;
@@ -1184,14 +1184,14 @@
 		}
 
 	body.is-touch #bannerpersonal {
-		background-attachment: scroll;
+		background-attachment: fixed;
 	}
         
         
         #bannerresearch {
 		padding: 16em 0 15em 0;
                 background-repeat: no-repeat;
-		background-attachment: fixed;
+		background-attachment: scroll;
 		background-image: url("images/overlay.png"), url("../images/pic01.jpg");
 		background-position: center top;
 		background-size: 100%;
