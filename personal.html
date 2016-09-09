@@ -5,6 +5,7 @@
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 -->
 <html>
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
     <head>
         <title>Publications/CV</title>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -19,11 +20,10 @@
             <link rel="stylesheet" href="css/skel.css" />
             <link rel="stylesheet" href="css/style.css" />
             <link rel="stylesheet" href="css/style-xlarge.css" />
-            <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+            <link rel="stylesheet" href="css/w3.css">
         </noscript>
     </head>
     <body class="landing">
-
         <!-- Header -->
         <header id="header" class="alt">
         <nav id="nav">
@@ -41,25 +41,48 @@
         <section id="bannerpersonal">
         <h2>Personal</h2>
         </section>
-
         <!-- One -->
-        <section id="one" class="wrapper style1">
         <div class="container">
             <p> I enjoy playing the guitar, playing sports, traveling, hiking, watching movies, cooking, and exploring NYC. Here's of me doing some of these activities! </p>
-            <div class="w3-display-container mySlides">
-                <img src="images/IMG_1131.jpg" style="width:100%">
-                <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
-                    blash 
-                </div>
-            </div>
-            <div class="w3-display-container mySlides">
-                <img src="images/IMG_1131.jpg" style="width:100%">
-                <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
-                    blahh 
-                </div>
-            </div>
 
-            <div class="4u"><span class="image fit"><img src="images/IMG_1131.jpg" alt="" /></span></div>
+
+            <div class="w3-content" style="max-width:800px;position:middle">
+                <div class="w3-display-container mySlides">
+                    <img src="images/hackthedinos.png" style="width:100%">
+                    <div class="w3-display-topmiddle w3-large w3-container w3-padding-16 w3-black">
+                        Hack the Dinos Hackathon and empty AMNH!
+                    </div>
+                </div>
+                <div class="w3-display-container mySlides">
+                    <img src="images/peacock.jpg" style="width:100%">
+                    <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                        Peacocks in Madrid
+                    </div>
+                </div>
+                <div class="w3-display-container mySlides">
+                    <img src="images/eldridge.jpg" style="width:100%">
+                </div>
+                <div class="w3-display-container mySlides">
+                    <img src="images/basque.jpg" style="width:100%">
+                    <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                        Basque country
+                    </div>
+                </div>
+                <div class="w3-display-container mySlides">
+                    <img src="images/lapalma.jpg" style="width:100%">
+                    <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                        Canary Islands
+                    </div>
+                </div>
+                <div class="w3-display-container mySlides">
+                    <img src="http://physics.nyu.edu/~cs3006/ISC/Past_Talks_Spring2016/6_Christine/20160415_185514.jpg" style="width:100%">
+                    <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+                        Learning how to knit during the Intellectually Stimulating Craic!
+                    </div>
+                </div>
+                <a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:55%;left:0" onclick="plusDivs(-1)">❮</a>
+                <a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:55%;right:0" onclick="plusDivs(1)">❯</a>
+            </div>
 
             <p> If you're ever visiting NYU, come check out the <a href="http://physics.nyu.edu/~cs3006/ISC/">Intellectually Stimulating Craic</a>! 
             It's a series of lectures that the graduate students organize (mainly Cato Sandford) every semester with only one rule, you can't 
@@ -74,6 +97,24 @@
             </ul>
         </div>
         </footer>
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
 
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                if (n > x.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = x.length}
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex-1].style.display = "block";
+            }
+        </script>
     </body>
 </html>
