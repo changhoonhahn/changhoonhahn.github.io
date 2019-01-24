@@ -83,7 +83,7 @@ header:after,
 section:after {
     content: '';
     display: block;
-    width: 150px;
+    width: 0px;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
     margin-top: 60px; 
     margin-bottom: 50px; /*margin: 60px auto;*/

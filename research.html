@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="css/base.css" type="text/css" />
 <link rel="stylesheet" href="css/code.css" type="text/css" />
 
-<link rel="icon" type="image/png" href="images/avatar5.png" sizes="300x300"> 
+<link rel="icon" type="image/png" href="images/avatar4.png" sizes="300x300"> 
 <!--<link rel="icon" type="image/png" href="{{ SITEURL }}/theme/images/favicon.png" sizes="32x32">  -->
 
 </head>
@@ -30,20 +30,96 @@
         </ul>
     </header>
     <section id="research"> 
-        <b>Galaxy Evolution</b> 
-    </section>
-
-    <section id="research"> 
-        <b>Large-scale Structure</b> 
-    </section>
-
-    <section id="research"> 
-        <b>Inference</b> 
+        <b><font size="5">galaxy formation / evolution</font></b><br/>
+        Galaxies in observations and state-of-the-art simulations broadly fall 
+        into two categories: star-forming and quiescent 
+        [<a href="https://arxiv.org/abs/1809.01665"><font color='DarkBlue'>1809.01665</font></a>]. 
+        Over cosmic time, significant fractions of star-forming galaxies 
+        rapidly ``quench'' their star formation and become quiescent. In 
+        [<a href="https://arxiv.org/abs/1412.7162"><font color='DarkBlue'>1412.7162</font></a>], 
+        I investigated the role that environment plays in this phenomenon using 
+        <a href="https://primus.ucsd.edu/"><font color='DarkBlue'>PRIMUS</font></a>, 
+        a spectroscopic survey to z=1 with 120,000 galaxy redshifts.
+        <br/>
+        <br/>  
+        Hierarchical structure formation predicted by &Lambda;CDM provides a 
+        concrete framework for galaxy formation and evolution: central galaxies 
+        reside at the core of dark matter halos while satellite galaxies orbit 
+        around them. Exploiting this framework, I used empirical models that 
+        combine cosmological N-body simulations with observed trends in the 
+        galaxy population (<i>e.g.</i> stellar mass function) 
+        to measure the timescale of star formation quenching in central galaxies
+        [<a href="https://arxiv.org/abs/1609.04398"><font color='DarkBlue'>1609.04398</font></a>], 
+        debunk "galactic conformity"
+        [<a href="https://arxiv.org/abs/1702.01121"><font color='DarkBlue'>1702.01121</font></a>], 
+        and measure signatures of "assembly bias"
+        [<a href="https://arxiv.org/abs/1705.08458"><font color='DarkBlue'>1705.08458</font></a>,  
+        <a href="https://arxiv.org/abs/1610.01991"><font color='DarkBlue'>1610.01991</font></a>]. 
+        <br/>  
+        <br/>  
+        <b><font size="5">large-scale structure (LSS)</font></b><br/>
+        <a href="http://www.sdss3.org/surveys/boss.php"><font color='DarkBlue'>BOSS</font></a>, 
+        <a href="https://www.sdss.org/surveys/eboss/"><font color='DarkBlue'>eBOSS</font></a>, 
+        and in the future DESI will map the spatial distribution of 
+        galaxies over an unprecedented cosmic volume in order to probe fundamental 
+        physics. Baryon Acoustic Oscillations observed in galaxy clustering can 
+        be used to measure the expansion rate of the universe, and thus constrain 
+        dark energy. Meanwhile, redshift-space distortions (RSD) in galaxy clustering 
+        can be used to measure the growth rate of structure and test General Relatively (GR).   
+        <br/>  
+        <br/>  
+        Fiber-fed spectrographs of these surveys are critical for collecting millions 
+        of redshifts; however, instrumental constraints limit fibers from being placed 
+        close to each other on the focal plane, bias galaxy clustering, and prevent 
+        accurate constraints on cosmological parameters. In 
+        [<a href="https://arxiv.org/abs/1609.01714"><font color="DarkBlue">1609.01714</font></a>],
+        I developed methods that successfully accounted for this effect and extend 
+        analyses down to smaller scales than ever before. I have also contributed 
+        to measuring galaxy clustering
+        [<a href="https://arxiv.org/abs/1607.05383"><font color="DarkBlue">1607.05383</font></a>]
+        and constructing cosmological simulations for estimating the covariance 
+        matrices of BOSS and eBOSS analyses 
+        [<a href="https://arxiv.org/abs/1509.06404"><font color="DarkBlue">1509.06404</font></a>,
+        <a href="https://arxiv.org/abs/1612.06918"><font color="DarkBlue">1612.06918</font></a>].
+        <br/>  
+        <br/>  
+        Extending galaxy clustering analyses to smaller scales allows access to
+        extra constraining power but requires reliably modeling those scales. 
+        Standard models based on perturbation theory break down on small scales 
+        due to non-linear structure formation. Models that instead use a suite of 
+        simulations spanning parameter space and interpolation schemes can 
+        more accurately <i>emulate</i> galaxy clustering. Emulators so far have been 
+        limited to two-point clustering statistics, which alone are severely limited 
+        by degeneracies with bias parameters. Recently, I've been developing
+        an emulator of two-point and <i>three</i>-point clusterin to break these 
+        degeneracies, test GR, and constrain the total mass of neutrinos. 
+        <br/>  
+        <br/>  
+        <b><font size="5">statistics / inference</font></b><br/>  
+        Standard analyses make a major assumption in their parameter inference 
+        that the likelihood function is Gaussian. In LSS, even if 
+        the underlying density field is Gaussian, this assumption is incorrect. In 
+        [<a href="https://arxiv.org/abs/1803.06348"><font color='DarkBlue'>1803.06348</font></a>],
+        I demonstrated using non-parametric divergence estimators from machine learning 
+        that the likelihood of the BOSS RSD analysis is non-Gaussian and 
+        assuming that it's Gaussian significantly biases parameter constraints.
+        I also developed methods for more accurately estimating the true likelihood using 
+        novel statistical techniques (<i>e.g.</i> independent component analysis). 
+        <br/>  
+        <br/>  
+        Likelihood-free inference, such as Approximate Bayesian Computation, also 
+        enables accurate parameter inference without making assumptions about the 
+        likelihood. While ABC has been used in astronomy, 
+        [<a href="https://arxiv.org/abs/1607.01782"><font color='DarkBlue'>1607.01782</font></a>]
+        was the first to implement it in LSS and demonstrate its feasibility. 
+        It also illustrated how ABC, by relaxing assumptions on the likelihood, 
+        allows observables with intractable likelihoods to be robustly included 
+        in analyses. 
     </section>
 
     <footer> 
-        &copy; 2018 ChangHoon Hahn <br> 
-        Feel free to drop me at a line at 
+        &copy; 2019 ChangHoon Hahn <br> 
+        feel free to drop me at a line at 
         <a href="mailto:changhoonhahn@lbl.gov">changhoonhahn@lbl.gov</a>.
     </footer> 
 </div>
