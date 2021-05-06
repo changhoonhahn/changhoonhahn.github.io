@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>ChangHoon Hahn --- Research</title>
+<meta id="viewport" name="viewport" content="width=500" />
+<meta name="description" content="Chang is a postdoc at Berkeley Lab" />
+
+<link rel="stylesheet" href="css/normalize.css" type="text/css" />
+<link rel="stylesheet" href="css/base.css" type="text/css" />
+<link rel="stylesheet" href="css/code.css" type="text/css" />
+
+<link rel="icon" type="image/png" href="images/chicago.png" sizes="300x300"> 
+<!--<link rel="icon" type="image/png" href="{{ SITEURL }}/theme/images/favicon.png" sizes="32x32">  -->
+<style> 
+    #research a{
+        color:DarkBlue; 
+    }
+    #research figcaption{
+        line-height:15px; 
+    }
+</style>
+</head>
+<body>
+
+<div class="content">
+
+    <header>
+        <a href="index.html"><img src="images/chicago.png" alt="me"></a>
+        <h1><a href="index.html">ChangHoon Hahn</a></h1>
+        <ul>
+            <li></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="cv/CV.pdf">CV</a></li>
+            <li><a href="code.html">Code</a></li>
+        </ul>
+    </header>
+    <section id="research"> 
+        My research interests include developing 
+        <a href="stats.html">statistical and ML methods</a>, 
+        <a href="galaxy.html">galaxy formation</a>, and
+        <a href="cosmo.html">cosmology with DESI</a>.
+        <p>
+        <h2 id="stats"><u>Deep Generative Models</u></h2></br>
+        With upcoming surveys like <a href="cosmo.html">DESI</a>, PFS, JWST,
+        Rubin, and Roman, astronomy is entering the era of Big Data.  
+        This flurry of data will soon place a soaring demand for simulations
+        that cannot be met by current methods. 
+        ML offers new ways for generating simulations faster and with higher accuracy: 
+        <i>e.g.</i> in [<a href="https://arxiv.org/abs/1910.04255">1910.04255</a>]
+        we demonstrated that ML can be used to accurately construct N-body
+        simulations with massive neutrinos that originally takes 700 CPU hours
+        in just 4 mins.
+        Much of my current research is into <u>deep generative models</u> aimed
+        at developing unsupervised learning methods for generating realistic
+        simulations. 
+        </p>
+        <p>
+        My focus is on building generative models that incorporate our knowledge
+        of physics for broad scientific applicability and interpretability. 
+        For example, most of the light in galaxy spectra comes from stellar populations
+        that can be modeled using stellar population synthesis (SPS).
+        I am currently developing a generative model for galaxy spectra that
+        incorporates a full SPS model within its architecture. 
+        It also includes physical transformations such as redshifting within
+        its causal structure, inspired by contrastive learning.
+        Compared to SPS models, this physics-driven generative model produces
+        galaxy spectra that are more realistic, faster, and equally interpretable.
+        More broadly, these generative models will crucial to meet the
+        simulation demands of upcoming surveys.
+        </p>
+        <p>
+        <h2 id="stats"><u>Simulation-Based Inference</u></h2></br>
+        SBI (also known as ``likelihood-free'' inference; LFI) are methods that
+        use simulations of the observed data to directly estimate the posterior
+        or likelihood distributions. 
+        SBI only requires realistic simulations of the data to conduct rigorous
+        Bayesian inference. 
+        SBI relaxes any of the typical assumptions on the likelihood, which
+        means that SBI analyses can include low signal-to-noise regimes where
+        the Gaussian likelihood assumption breaks down. 
+        It also enables inference with observables where the likelihood is
+        difficult to write down so SBI analyses can exploit the statistical
+        power of non-standard observables inaccessible with standard
+        approaches. 
+        </p>
+        <p>
+        Today a wide range of SBI methods have been applied to astronomy. 
+        For example, Approximate Bayesian Computation (ABC) is an SBI method
+        that does not require evaluating the likelihood.
+        I was the first to implement ABC in LSS
+        [<a href="https://arxiv.org/abs/1607.01782"><font color='DarkBlue'>1607.01782</font></a>]
+        and have since used it extensively in my 
+        <a href="galaxy.html">galaxy formation work</a>. 
+        I also developed SBI methods that estimate the likelihood from 
+        simulations via density estimation 
+        [<a href="https://arxiv.org/abs/1803.06348"><font color='DarkBlue'>1803.06348</font></a>].
+        New neural density estimation methods in ML, such as normalizing
+        flows, enable even more efficient SBI by reducing the number of
+        required simulations. 
+        I recently organized LFI workshops at the 
+        <a href="https://lfitaskforce.github.io/FlatironMeeting/">Flatiron Institute</a> 
+        and 
+        <a href="https://bids.berkeley.edu/events/bay-area-likelihood-free-inference-meeting">Berkeley Institute for Data Science</a> 
+        that brought together experts from across disciplines to share the latest LFI 
+        techniques, use cases and applications, and to discuss open challenges. 
+        I am also part of a <a href="https://github.com/LFITaskForce">LFI taskforce</a> 
+        whose aim is to develop a general LFI framework and a LFI handbook for cosmology.
+        </p>
+        <p>
+        <h2 id="stats"><u>Probabilistic Galaxy Catalogs</u></h2></br>
+        One application for deep generative models and SBI is in constructing
+        probabilistic galaxy catalogs. 
+        As part of the DESI Galaxy Quasar Physics working group, I'm currently leading the 
+        construction of a <u>fully probabilistic value-added catalog of BGS galaxies (PROVABGS)</u> 
+        from jointly fitting photometry and spectra. 
+        This catalog will provide full posteriors of the physical properties of
+        BGS galaxies and enable more sophisticated and rigorous statistical
+        analyses such as proper population inference and hierarchical
+        probabilistic methods.  
+        With 10+million galaxies, PROVABGS will provide the low redshift anchor
+        in understanding galaxy evolution for upcoming high redshift surveys
+        (e.g. JWST and Roman). 
+        </p>
+        <p>
+        A full Bayesian spectral energy distribution analysis for a single
+        galaxy takes ~100 CPU hours. 
+        To jointly analyze the photometry and spectra of 10+million BGS
+        galaxies without using a billion CPU hours, I am developing new methods
+        that address the challenges of massively scaling up current analyses. 
+        In [<a href="https://arxiv.org/abs/1911.11778">1911.11778</a>], we
+        built neural emulators for SED models that speed up likelihood
+        evaluations by >1000x. 
+        This still will not be sufficient for future experiments like Roman,
+        which will survey a <i>billion</i> galaxies. 
+        I am currently developing a normalizing flow-based SBI framework that
+        will accelerate the statistical analysis even further. 
+        The code for analyzing PROVABGS is publicly <a href="https://github.com/changhoonhahn/provabgs/">available</a>. 
+        </p> 
+    </section>
+
+    <footer> 
+        &copy; 2021 ChangHoon Hahn <br> 
+        feel free to drop me a line at 
+        <a href="mailto:changhoon.hahn@princeton.edu">changhoon.hahn@princeton.edu</a>.
+    </footer> 
+</div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>ChangHoon Hahn --- Research</title>
+<meta id="viewport" name="viewport" content="width=500" />
+<meta name="description" content="Chang is a postdoc at Berkeley Lab" />
+
+<link rel="stylesheet" href="css/normalize.css" type="text/css" />
+<link rel="stylesheet" href="css/base.css" type="text/css" />
+<link rel="stylesheet" href="css/code.css" type="text/css" />
+
+<link rel="icon" type="image/png" href="images/chicago.png" sizes="300x300"> 
+<!--<link rel="icon" type="image/png" href="{{ SITEURL }}/theme/images/favicon.png" sizes="32x32">  -->
+<style> 
+    #research a{
+        color:DarkBlue; 
+    }
+    #research figcaption{
+        line-height:15px; 
+    }
+</style>
+</head>
+<body>
+
+<div class="content">
+
+    <header>
+        <a href="index.html"><img src="images/chicago.png" alt="me"></a>
+        <h1><a href="index.html">ChangHoon Hahn</a></h1>
+        <ul>
+            <li></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="cv/CV.pdf">CV</a></li>
+            <li><a href="code.html">Code</a></li>
+        </ul>
+    </header>
+    <section id="research"> 
+        My research interests include developing 
+        <a href="stats.html">statistical and ML methods</a>, 
+        <a href="galaxy.html">galaxy formation</a>, and
+        <a href="cosmo.html">cosmology with DESI</a>.
+        <p>
+        <h2 id="galaxy"><u>Galaxy Formation / Evolution</u></h2><br/>
+        Galaxies broadly fall into two categories: star-forming and quiescent.
+        Over cosmic time significant fractions of star-forming galaxies rapidly 
+        "quench" their star formation and become quiescent 
+        [<a href="https://arxiv.org/abs/1412.7162"><font color='DarkBlue'>1412.7162</font></a>]. 
+        State-of-the-art galaxy formation models (hydro sims, semi-analytic models, and 
+        empirical models) qualitatively reproduce global distributions and scaling relations 
+        of galaxies in observations.
+        However, <em>qualitative</em> comparisons to a mixed bag of observations are 
+        <em>insufficient</em> for answering key questions in galaxy formation.
+        </p>
+        <p> 
+        As part of the <a href="https://iqcollaboratory.github.io/"><font color='DarkBlue'>IQ collaboratory</font></a>, 
+        I am leading an effort to forward model observables (photometry and
+        spectra) of simulated galaxies and compare them to observations in
+        order to shed light on star formation quenching in galaxies. As the
+        first step, I compared the relation between star formation rate and
+        stellar mass of star forming galaxies in multiple galaxy formation
+        models to reveal nearly an order of magnitude differences among them
+        [<a href="https://arxiv.org/abs/1809.01665"><font color='DarkBlue'>1809.01665</font></a>]. 
+        Later, we found that hydrodynamical simulations cannot reproduce the 
+        absence of quiescent isolated low mass galaxies in observations [<a href="https://arxiv.org/abs/2010.01132">2010.01132</a>].  
+        I am currently developing an empirical framework for dust attenuation
+        in galaxies that will be incorporated into the forward model and will
+        allow us to marginalize over dust when comparing the simulations to
+        observations.
+        </p> 
+        <figure>
+        <img src="images/IQ.png" width=400px align="center"></br>
+        <figcaption><font size=2>State-of-the-art hydrodynamical simulations (e.g. Illustris, 
+                EAGLE, and MUFASA) and semi-analytic models are able to qualitatively reproduce
+                the star-forming sequence. However, a consistent data-driven
+                comparison reveals large discrepancies.
+            </font></figcaption>
+        </figure>
+        <p>
+        Hierarchical structure formation predicted by &Lambda;CDM provides a 
+        concrete framework for galaxy formation and evolution: central galaxies 
+        reside at the core of dark matter halos while satellite galaxies orbit 
+        around them. Empirical models can be constructed in this framework by
+        combining cosmological N-body simulations with observed trends in the 
+        galaxy population (<i>e.g.</i> stellar mass function) and used to 
+        constrain specific well-posed questions in galaxy formation. 
+        Using this approach, I've constrained the timescale of star formation quenching 
+        in central galaxies
+        [<a href="https://arxiv.org/abs/1609.04398"><font color='DarkBlue'>1609.04398</font></a>], 
+        demonstrate that large-scale "galactic conformity" is driven by contamination 
+        [<a href="https://arxiv.org/abs/1702.01121"><font color='DarkBlue'>1702.01121</font></a>], 
+        and measure the strength of assembly bias
+        [<a href="https://arxiv.org/abs/1705.08458"><font color='DarkBlue'>1705.08458</font></a>,  
+        <a href="https://arxiv.org/abs/1610.01991"><font color='DarkBlue'>1610.01991</font></a>]. 
+        Most recently, I used empirical models to demonstrate that the stellar-to-halo 
+        mass relation can be used to constrain the timescale of star formation variability
+        [<a href="https://arxiv.org/abs/1910.01644"><font color='DarkBlue'>1910.01644</font></a>].
+        </p>
+    </section>
+
+    <footer> 
+        &copy; 2021 ChangHoon Hahn <br> 
+        feel free to drop me a line at 
+        <a href="mailto:changhoon.hahn@princeton.edu">changhoon.hahn@princeton.edu</a>.
+    </footer> 
+</div>
+</body>
+</html>
