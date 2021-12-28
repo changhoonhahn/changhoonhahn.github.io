@@ -38,65 +38,73 @@
         </ul>
     </header>
     <section id="research"> 
-        My research interests include developing 
-        <a href="stats.html">statistical and ML methods</a>, 
+        My research interests include 
+        <a href="stats.html">astrostatistics and ML</a>, 
         <a href="galaxy.html">galaxy formation</a>, and
-        <a href="cosmo.html">cosmology with DESI</a>.
+        <a href="cosmo.html">cosmology</a>.
         <p>
         <h2 id="galaxy"><u>Galaxy Formation / Evolution</u></h2><br/>
         Galaxies broadly fall into two categories: star-forming and quiescent.
         Over cosmic time significant fractions of star-forming galaxies rapidly 
         "quench" their star formation and become quiescent 
         [<a href="https://arxiv.org/abs/1412.7162"><font color='DarkBlue'>1412.7162</font></a>]. 
-        State-of-the-art galaxy formation models (hydro sims, semi-analytic models, and 
-        empirical models) qualitatively reproduce global distributions and scaling relations 
-        of galaxies in observations.
-        However, <em>qualitative</em> comparisons to a mixed bag of observations are 
-        <em>insufficient</em> for answering key questions in galaxy formation.
+        State-of-the-art galaxy formation models (hydro sims, semi-analytic
+        models, and empirical models) reproduce global distributions and
+        scaling relations of galaxies in observations.
+        However, comparisons of scaling relations using inconsistently measured
+        galaxy properties are <em>insufficient</em> for shedding further light
+        on the physical processes that drive galaxy evolution. 
         </p>
         <p> 
         As part of the <a href="https://iqcollaboratory.github.io/"><font color='DarkBlue'>IQ collaboratory</font></a>, 
-        I am leading an effort to forward model observables (photometry and
-        spectra) of simulated galaxies and compare them to observations in
-        order to shed light on star formation quenching in galaxies. As the
-        first step, I compared the relation between star formation rate and
-        stellar mass of star forming galaxies in multiple galaxy formation
-        models to reveal nearly an order of magnitude differences among them
+        I am leading an effort to test galaxy formation models and shed light
+        on star formation quenching in galaxies by conducting an
+        apples-to-apples comparison of simulated and observed galaxy
+        populations. 
+        Even among the models, I found nearly an order of magnitude difference
+        among their stellar mass-star formation rate relations
         [<a href="https://arxiv.org/abs/1809.01665"><font color='DarkBlue'>1809.01665</font></a>]. 
-        Later, we found that hydrodynamical simulations cannot reproduce the 
-        absence of quiescent isolated low mass galaxies in observations [<a href="https://arxiv.org/abs/2010.01132">2010.01132</a>].  
-        I am currently developing an empirical framework for dust attenuation
-        in galaxies that will be incorporated into the forward model and will
-        allow us to marginalize over dust when comparing the simulations to
-        observations.
+        When we compared them to observations, we found that even
+        hydrodynamical simulations (the "gold standard") cannot reproduce the
+        absence of quiescent isolated low mass galaxies in observations because
+        their prescription for stellar feedback is too efficient in dwarf galaxies 
+        [<a href="https://arxiv.org/abs/2010.01132">2010.01132</a>].
+        Most recently in [<a href="https://arxiv.org/abs/2106.09741">2106.09741</a>],
+        I used comparisons of simulations to observations to constrain the dust
+        content of galaxies. 
         </p> 
         <figure>
         <img src="images/IQ.png" width=400px align="center"></br>
-        <figcaption><font size=2>State-of-the-art hydrodynamical simulations (e.g. Illustris, 
-                EAGLE, and MUFASA) and semi-analytic models are able to qualitatively reproduce
-                the star-forming sequence. However, a consistent data-driven
-                comparison reveals large discrepancies.
+        <figcaption><font size=2>State-of-the-art hydrodynamical simulations
+                (e.g. Illustris, EAGLE, and MUFASA) and semi-analytic models
+                are able to qualitatively reproduce the star-forming sequence.
+                However, a consistent apples-to-apples comparison reveals large
+                discrepancies.
             </font></figcaption>
         </figure>
         <p>
-        Hierarchical structure formation predicted by &Lambda;CDM provides a 
-        concrete framework for galaxy formation and evolution: central galaxies 
-        reside at the core of dark matter halos while satellite galaxies orbit 
-        around them. Empirical models can be constructed in this framework by
-        combining cosmological N-body simulations with observed trends in the 
-        galaxy population (<i>e.g.</i> stellar mass function) and used to 
-        constrain specific well-posed questions in galaxy formation. 
+        Another approach to shedding light on galaxy evolution is through 
+        empirical models built from combining the precise predictions of
+        structure formation from cosmology with the empirical relations of
+        galaxy populations. 
+        Empirical models are computationally efficient, so they can be used
+        for parameter exploration and compared to observations using 
+        <a href="stats.html">simulation-based inference</a> to constrain
+        specific physical processes.  
         Using this approach, I've constrained the timescale of star formation quenching 
         in central galaxies
         [<a href="https://arxiv.org/abs/1609.04398"><font color='DarkBlue'>1609.04398</font></a>], 
-        demonstrate that large-scale "galactic conformity" is driven by contamination 
+        demonstrated that large-scale "galactic conformity" is driven by contamination 
         [<a href="https://arxiv.org/abs/1702.01121"><font color='DarkBlue'>1702.01121</font></a>], 
-        and measure the strength of assembly bias
+        and measured the strength of assembly bias
         [<a href="https://arxiv.org/abs/1705.08458"><font color='DarkBlue'>1705.08458</font></a>,  
         <a href="https://arxiv.org/abs/1610.01991"><font color='DarkBlue'>1610.01991</font></a>]. 
-        Most recently, I used empirical models to demonstrate that the stellar-to-halo 
-        mass relation can be used to constrain the timescale of star formation variability
+        Most recently, I used empirical models to constrain the timescale of
+        star formation variability
         [<a href="https://arxiv.org/abs/1910.01644"><font color='DarkBlue'>1910.01644</font></a>].
+        With upcoming observations (<i>e.g.</i>DESI, PFS, JWST, Rubin, and
+        Roman), we'll be able to extend these comparisons to new galaxy
+        populations and constrain galaxy evolution with unprecedented precision.  
         </p>
     </section>
 
