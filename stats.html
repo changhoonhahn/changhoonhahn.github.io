@@ -38,77 +38,104 @@
         </ul>
     </header>
     <section id="research"> 
-        My research interests include developing 
-        <a href="stats.html">statistical and ML methods</a>, 
+        My research interests include  
+        <a href="stats.html">astrostatistics and ML</a>, 
         <a href="galaxy.html">galaxy formation</a>, and
         <a href="cosmo.html">cosmology with DESI</a>.
         <p>
-        <h2 id="stats"><u>Deep Generative Models</u></h2></br>
-        With upcoming surveys like <a href="cosmo.html">DESI</a>, PFS, JWST,
-        Rubin, and Roman, astronomy is entering the era of Big Data.  
-        This flurry of data will soon place a soaring demand for simulations
-        that cannot be met by current methods. 
-        ML offers new ways for generating simulations faster and with higher accuracy: 
-        <i>e.g.</i> in [<a href="https://arxiv.org/abs/1910.04255">1910.04255</a>]
-        we demonstrated that ML can be used to accurately construct N-body
-        simulations with massive neutrinos that originally takes 700 CPU hours
-        in just 4 mins.
-        Much of my current research is into <u>deep generative models</u> aimed
-        at developing unsupervised learning methods for generating realistic
-        simulations. 
-        </p>
-        <p>
-        My focus is on building generative models that incorporate our knowledge
-        of physics for broad scientific applicability and interpretability. 
-        For example, most of the light in galaxy spectra comes from stellar populations
-        that can be modeled using stellar population synthesis (SPS).
-        I am currently developing a generative model for galaxy spectra that
-        incorporates a full SPS model within its architecture. 
-        It also includes physical transformations such as redshifting within
-        its causal structure, inspired by contrastive learning.
-        Compared to SPS models, this physics-driven generative model produces
-        galaxy spectra that are more realistic, faster, and equally interpretable.
-        More broadly, these generative models will crucial to meet the
-        simulation demands of upcoming surveys.
-        </p>
         <p>
         <h2 id="stats"><u>Simulation-Based Inference</u></h2></br>
-        SBI (also known as ``likelihood-free'' inference; LFI) are methods that
-        use simulations of the observed data to directly estimate the posterior
-        or likelihood distributions. 
-        SBI only requires realistic simulations of the data to conduct rigorous
-        Bayesian inference. 
-        SBI relaxes any of the typical assumptions on the likelihood, which
-        means that SBI analyses can include low signal-to-noise regimes where
-        the Gaussian likelihood assumption breaks down. 
-        It also enables inference with observables where the likelihood is
-        difficult to write down so SBI analyses can exploit the statistical
-        power of non-standard observables inaccessible with standard
-        approaches. 
+        Probabilistic inference is a pivotal step in any scientific experiment.
+        It provides the statistical framework for comparing theoretical
+        models that encapsulate our knowledge of physics processes to
+        observations and derive constraints on the parameters of interest —
+        <i>i.e.</i> physics. 
+        In cosmology, for instance, we use inference to measure the contents of
+        the Universe from 3D maps of galaxies.
+        In galaxy evolution, inference allows us to measure the physical
+        properties of galaxies from their spectra.
+        <p>
+        A new class of methods in simulation-based inference (SBI; also known as
+        "likelihood-free inference") is transforming probabilistic inference. 
+        SBI enables rigorous inference using only simulations that describe the
+        observations and the physical phenomena of interest. 
+        Cutting-edge SBI methods exploit neural density estimation and can
+        efficiently infer high-dimensional posteriors, the probability
+        distribution of parameters given observations. 
+        SBI relaxes the assumptions in standard approaches for more accurate
+        and rigorous inference. 
+        It also enables us to leverage the predictive power of high-fidelity
+        simulations to more tightly constrain physics.
         </p>
         <p>
-        Today a wide range of SBI methods have been applied to astronomy. 
-        For example, Approximate Bayesian Computation (ABC) is an SBI method
-        that does not require evaluating the likelihood.
-        I was the first to implement ABC in LSS
+        I am a leading expert on SBI. 
+        I pioneered SBI in large-scale structure
         [<a href="https://arxiv.org/abs/1607.01782"><font color='DarkBlue'>1607.01782</font></a>]
-        and have since used it extensively in my 
-        <a href="galaxy.html">galaxy formation work</a>. 
-        I also developed SBI methods that estimate the likelihood from 
-        simulations via density estimation 
-        [<a href="https://arxiv.org/abs/1803.06348"><font color='DarkBlue'>1803.06348</font></a>].
-        New neural density estimation methods in ML, such as normalizing
-        flows, enable even more efficient SBI by reducing the number of
-        required simulations. 
-        I recently organized LFI workshops at the 
+        and <a href="galaxy.html">galaxy evolution studies</a>. 
+        I have also developed new SBI methods [<a href="https://arxiv.org/abs/1803.06348"><font color='DarkBlue'>1803.06348</font></a>].
+        Last semester (Fall 2021), I co-developed and instructed a graduate
+        course on SBI at Princeton. 
+        I also organized workshops on SBI at the 
         <a href="https://lfitaskforce.github.io/FlatironMeeting/">Flatiron Institute</a> 
-        and 
+        and at 
         <a href="https://bids.berkeley.edu/events/bay-area-likelihood-free-inference-meeting">Berkeley Institute for Data Science</a> 
-        that brought together experts from across disciplines to share the latest LFI 
-        techniques, use cases and applications, and to discuss open challenges. 
-        I am also part of a <a href="https://github.com/LFITaskForce">LFI taskforce</a> 
-        whose aim is to develop a general LFI framework and a LFI handbook for cosmology.
+        that brought together SBI experts from across disciplines to share the
+        latest techniques, use cases and applications, and to discuss open
+        challenges. 
+        Much of my current research focuses on developing new SBI methods and
+        exploiting them to maximize the scientific return of upcoming galaxy
+        surveys, starting with DESI. 
         </p>
+
+        <h2 id="stats"><u>ML for Big Data Astronomy</u></h2></br>
+        With upcoming observations from <a href="cosmo.html">DESI</a>, PFS,
+        JWST, Rubin, and Roman, astronomy is entering the era of Big Data.  
+        ML techniques offer new ways to tackle these upcoming massive data sets.
+        One application of ML is to accelerate our models and simulations. 
+        <i>e.g.</i> in [<a href="https://arxiv.org/abs/1910.04255">1910.04255</a>]
+        we used ML to accurately construct N-body simulations with massive
+        neutrinos that originally takes 700 CPU hours in just 4 mins. 
+        Similarly, in [<a href="https://arxiv.org/abs/1911.11778">1911.11778</a>] 
+        we used neural emulators to make SED models >1000x times faster.
+        </p>
+        <p>
+        ML also provides essential tools to construct scalable analyses through
+        SBI.
+        Certain SBI methods enable amortized inference by using neural density
+        estimate of the posterior over the full conditional space of
+        observations. 
+        Once trained, they can be applied to data to infer the posterior from
+        each observation in seconds, effectively eliminating the computational
+        cost of inference. 
+        Using SBI, we can deploy rigorous and sophisticated analyses to the
+        billions of galaxies that will be observed by the next-generation
+        experiments.
+        For an example, check out my 
+        <a href="atlas_poster.html">interactive slides</a> 
+        from a recent 
+        <a href="http://www.iastro.pt/research/conferences/atlas21/"> conference</a>. 
+        </p> 
+        <p>
+        I am also developing unsupervised deep generative models for generating
+        realistic simulations. 
+        In particular, I am building generative models that incorporate our
+        knowledge of physics. 
+        For example, most of the light in galaxy spectra comes from stellar
+        populations that can be modeled using stellar population synthesis
+        (SPS).
+        I am currently developing a generative model for galaxy spectra that
+        incorporates SPS within its architecture. 
+        It also includes physical transformations such as redshifting within
+        its causal structure.
+        This physics-driven generative model produces galaxy spectra that are
+        more realistic and orders of magnitude faster than current models.
+        More broadly, these ML generative models will be crucial to meet
+        the simulation demands of upcoming surveys.
+        For more details, check out my 
+        <a href="mos_poster.html">interactive slides</a> from a recent
+        conference.
+        </p>
+        <!--
         <p>
         <h2 id="stats"><u>Probabilistic Galaxy Catalogs</u></h2></br>
         One application for deep generative models and SBI is in constructing
@@ -139,6 +166,7 @@
         will accelerate the statistical analysis even further. 
         The code for analyzing PROVABGS is publicly <a href="https://github.com/changhoonhahn/provabgs/">available</a>. 
         </p> 
+        -->
     </section>
 
     <footer> 
