@@ -1,0 +1,230 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>ChangHoon Hahn --- Research</title>
+<meta id="viewport" name="viewport" content="width=500" />
+<meta name="description" content="Chang is a postdoc at Berkeley Lab" />
+
+<link rel="stylesheet" href="css/normalize.css" type="text/css" />
+<link rel="stylesheet" href="css/base.css" type="text/css" />
+<link rel="stylesheet" href="css/code.css" type="text/css" />
+
+<link rel="icon" type="image/png" href="images/chicago.png" sizes="300x300"> 
+<!--<link rel="icon" type="image/png" href="{{ SITEURL }}/theme/images/favicon.png" sizes="32x32">  -->
+<style> 
+    #research a{
+        color:DarkBlue; 
+    }
+    #research figcaption{
+        line-height:15px; 
+    }
+</style>
+</head>
+<body>
+
+<div class="content">
+
+    <header>
+        <a href="index.html"><img src="images/chicago.png" alt="me"></a>
+        <h1><a href="index.html">ChangHoon Hahn</a></h1>
+        <ul>
+            <li></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="cv/CV.pdf">CV</a></li>
+            <li><a href="code.html">Code</a></li>
+        </ul>
+    </header>
+    <section id="research"> 
+        My research interests include 
+        <a href="stats.html">astrostatistics and ML</a>, 
+        <a href="galaxy.html">galaxy evolution</a>, and
+        <a href="cosmo.html">cosmology</a>.
+        <p>
+
+
+        <h2 id="desi"><u>ChangHoon Hahn's Research Proposal</u></h2></br> 
+        Spectroscopic galaxy surveys produce detailed 3D distributions of galaxies 
+        that serve as one of the most effective probes of the growth and expansion 
+        histories of the Universe. 
+        They also provide statistically powerful datasets to investigate the evolution 
+        of galaxies across cosmic history. 
+        With these surveys, we can explore fundamental questions about our Universe: 
+        What is the nature of dark energy that drives the accelerated expansion of the Universe? 
+        What is the sum of neutrino masses, Mnu?
+        What are the physical processes that drive galaxy evolution?
+
+        My research thus far has focused on leading the next-generation spectroscopic 
+        galaxy surveys, the Dark Energy Spectroscopic Instrument (DESI) and the Prime 
+        Focus Spectrograph (PFS), that will observe 50 million galaxies across 10 billion 
+        years of cosmic history. 
+        In addition, I have pioneered cutting-edge machine learning (ML) tools that I 
+        demonstrated can maximally extract cosmological information from these surveys. 
+
+        My research program will focus on applying the ML tools that I have
+        developed to the most powerful galaxy datasets from DESI and PFS. 
+        This research program will address fundamental questions in cosmology. 
+        In particular, I will: 
+        (1) settle cosmic tensions between early and late-time measurements of the growth 
+        and expansion histories, 
+        (2) make a 6sigma detection of Mnu, and 
+        (3) constrain key physical processes that drive galaxy evolution. 
+        </br>
+
+
+        <h2 id="desi"><u> Leading the Next-Generation Galaxy Surveys</u></h2></br>
+        The standard LCDM cosmological model, despite its remarkable success,
+        has recently come under scrutiny from cosmic  tensions, whose
+        statistical significance has continued to increase with the latest
+        observations. 
+        The strongest of the tensions is the Hubble tension, which refers to
+        the 5sigma disagreement between the late-time and early-time
+        measurements of the expansion history of the Universe (H0). 
+        There is also a 2sigma tension among measurements of the growth of
+        structure (S8). 
+        Insight into the cosmic tensions has the potential to reveal new physics beyond 
+        LCDM and shed light on the nature of dark energy.
+
+        Over the next five years, DESI and PFS will produce the leading galaxy samples for 
+        addressing both cosmic tensions. 
+        In its first year, DESI already observed more galaxies than all
+        previous spectroscopic surveys combined.
+        PFS will begin observing next year. 
+        From the 3D distribution of the millions of DESI and PFS galaxies, we
+        can use Baryon Acoustic Oscillations (BAO) as a standard ruler to
+        measure the expansion history. 
+        We can also use redshift-space distortions to measure the growth history.
+        My leadership and expertise in DESI and PFS will uniquely position my
+        group to lead galaxy clustering analyses that address both cosmic
+        tensions.
+
+        In DESI, I served as co-chair of the Bright Galaxy Survey (BGS), one of the main
+        DESI surveys.
+        I led the development of its target selection, survey design, observing strategy, 
+        and science verification. 
+        I am currently leading the construction of the BGS galaxy catalogs and 
+        the spectrophotometric analysis efforts.
+        In PFS, I am a co-leader of the Cosmology Survey, where I am leading the target 
+        selection and developing the main cosmological analyses.  
+        For my substantial contributions, I was awarded Builder in DESI and
+        Continuing Participant in PFS, which will grant my group full access to their data.
+        </br>
+
+        <h2 id="desi"><u>2. Settling Cosmic Tensions with SimBIG</u></h2> </br>
+        In addition to leading DESI and PFS, I have developed new methods that use ML techniques
+        to maximally exploit their cosmological information. 
+        Current analyses focus on extracting Gaussian information in the galaxy distribution 
+        on large scales. 
+        Yet, my work has demonstrated that there is substantial non-Gaussian
+        information in galaxy clustering and on small scales.
+
+        To extract this additional information, inaccessible to current analyses based on 
+        perturbation theory, I developed SimBIG. 
+        SimBIG uses simulation-based inference (SBI) with deep generative
+        models (e.g. ChatGPT) to perform highly efficient cosmological
+        inference using simulations.
+        By using high-fidelity simulations, we can accurately model galaxy clustering down to 
+        small scales and account for detailed observational effects. 
+        Applied to the SDSS-III BOSS observations, SimBIG increases the
+        precision of H0 and S8 by 1.5 and 2x over standard analyses.
+        With this increased precision, my work has already produced S8 and H0 constraints 
+        that are competitive with other cosmological probes. 
+
+        My group will apply SimBIG to DESI and PFS.  
+        Students will lead the development of state-of-the-art galaxy simulations, building 
+        on my past work.
+        They will also pioneer new SBI techniques.
+        Our  SimBIG analyses will produce leading constraints on both S8 and H0.
+        Furthermore, our S8 and H0 measurements will span redshift 0 to 2.4 and
+        bridge the gap between early- and late-time measurements from weak
+        lensing, supernovae, cosmic microwave background (CMB) experiments.
+        This research has the potential to either settle current S8 and H0 tensions or 
+        to uncover deviations in the cosmic growth and expansion histories from 
+        LCDM and reveal new physics.
+        </br>
+
+        <h2 id="desi"><u>3. A 6sigma Detection of the Sum of Neutrino Masses</u></h2> </br>
+        With galaxy clustering, we can also precisely measure Mnu. 
+        Neutrino oscillation experiments placed a lower bound of 0.06 eV and provided 
+        conclusive evidence of particle physics beyond the Standard Model. 
+        A precise Mnu measurement can distinguish between the normal and
+        inverted mass hierarchies to provide further insight into particle
+        physics.
+        However, upcoming laboratory experiments will not have the  sensitivity
+        to precisely distinguish between the hierarchies. 
+
+        On large scales, neutrinos behave like cold dark matter and contribute to 
+        the clustering of matter. 
+        However, on small scales neutrinos free-stream and do not contribute 
+        to the clustering.
+        This scale-dependent imprint can be measured from galaxy clustering 
+        to constrain Mnu. 
+        In fact, the tightest Mnu bounds currently come from combining
+        constraints from CMB and galaxy clustering.
+
+        The standard galaxy clustering analyses that I will lead in DESI and PFS will measure 
+        Mnu with 0.030eV precision. 
+        This more than doubles the precision of existing constraints.
+        It would exclude the inverted hierarchy at 1.5sigma if the neutrino masses 
+        are minimal and the hierarchy is normal (blue; Fig. 2).
+        I will improve the DESI and PFS Mnu constraints even further with SimBIG.
+        I demonstrated that non-Gaussian galaxy clustering is especially important for
+        Mnu because it breaks key parameter degeneracies. 
+        Furthermore, the imprint of Mnu is strongest on small scales. 
+        SimBIG can exploit both regimes. 
+
+        My group will extend SimBIG to include Mnu and apply it to DESI and PFS.
+        We will build on my work with both conventional and ML-based simulations. 
+        Our SimBIG analysis will improve the precision of DESI and PFS constraints by 
+        3x and place the tightest constraint on Mnu to date, sigma Mnu = 0.010 eV.
+        Our Mnu measurement would correspond to a 6sigma detection of Mnu and, 
+        if the neutrino masses are minimal, a 4sigma distinction between the neutrino 
+        mass hierarchies.
+        Furthermore, it will shed light on neutrino physics and provide key input for 
+        physics beyond the Standard Model. 
+        </br>
+
+        <h2 id="desi"><u>4. ML-Driven Discoveries in Galaxy Evolution</u></h2> </br>
+        DESI and PFS will probe an unprecedented diversity of galaxies.
+        In the nearby universe, DESI will observe dwarf galaxies that can be used
+        to test models of dark matter. 
+        Meanwhile, PFS will probe galaxies in the early universe. 
+        Combined with new ML techniques, this data presents a key opportunity to  
+        address fundamental questions in galaxy evolution. 
+
+        I demonstrated that ML models with physics-informed neural networks can 
+        capture more information in observations while  providing interpretability. 
+        They can also be used for neural inference, classification, and anomaly 
+        detection.
+        My group will use these ML tools to explore the new discovery space 
+        unlocked by the 50 million DESI and PFS galaxies. 
+        This work has the potential to discover new galaxy populations and 
+        astronomical phenomena. 
+
+        My ML tools will also enable studies of galaxy populations with newfound 
+        statistical rigor and precision.
+        I developed ML tools that accelerate modeling of galaxy observations by
+        10^5x and enable the inference of millions of galaxy properties. 
+        By leveraging these tools, my recent work showed that we can better
+        characterize galaxy populations and even use them as competitive
+        independent cosmological probes.
+
+        My group will extend this ML-driven approach and my work in galaxy
+        evolution to the DESI and PFS samples. 
+        Students and postdocs in my group will lead projects that investigate
+        the connection between galaxies and their dark matter environments.
+        With the advantage of both leading methodology and data, this work will shed new 
+        light on the physical processes that drive galaxy evolution and establish a 
+        statistical foundation for studying galaxy populations. 
+    </section>
+
+    <footer> 
+        &copy; 2021 ChangHoon Hahn <br> 
+        feel free to drop me a line at 
+        <a href="mailto:changhoon.hahn@princeton.edu">changhoon.hahn@princeton.edu</a>.
+    </footer> 
+</div>
+</body>
+</html>
